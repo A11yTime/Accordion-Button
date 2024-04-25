@@ -1,15 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <StaticButton />
+  <DynamicButton />
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import StaticButton from './components/StaticButton.vue';
+import DynamicButton from './components/DynamicButton.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    StaticButton,
+    DynamicButton
   }
 }
 </script>
