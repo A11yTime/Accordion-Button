@@ -2,10 +2,10 @@
   <div class="back-ground">
     <h1>Collapsable Button with dynamic Text</h1>
     <div>
-    <button class="expand-collapse-button" @click="toggleExpanded" :aria-label="isExpanded ? 'Collapse' : 'Expand' " :aria-expanded="isExpanded.toString()">
+    <button class="expand-collapse-button" aria-control="sect" @click="toggleExpanded" :aria-label="isExpanded ? 'Collapse' : 'Expand' " :aria-expanded="isExpanded.toString()">
     {{ isExpanded ? 'Collapse' : 'Expand' }}
   </button>
-  <div v-show="isExpanded">
+  <div v-show="isExpanded" id="sect">
     <!-- Content to expand/collapse -->
     <p>One of our most comfortable seating collections, Turner makes the most of its handsome proportions, high supportive back, and plush cushions. The sofa is crafted in your choice of seat depth and width, a broad range of durable, supple leathers, and with or without nailhead trim</p>
   </div>
